@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a7895dc36d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Iegor Taftai Portfolio</title>
+
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="container" id="nav-container">
+            <!-- Menu mobile toggle -->
+            <a class="menu-toggle" id="mobile-menu" onclick="toggleMenu()">☰</a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" onclick="closeMenu()">Accueil</a></li>
+                <li><a href="#intro" onclick="closeMenu()">Profil</a></li>
+                <li><a href="#objectifs" onclick="closeMenu()">Objectifs</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Compétences</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Projets</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="container hero-content">
+            <h2>Étudiant en informatique & développeur passionné
+                <br>(recherche d'alternance)
+            </h2>
+            <h1 class="highlight">IEGOR TAFTAI</h1>
+            <h2>Développement Système & Cybersécurité</h2>
+            <p>
+                Futur alternant C++/Système, passionné par la compréhension des systèmes (Windows, gestion mémoire, bas niveau).
+                J’apprends surtout en réalisant des projets concrets et en testant directement.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-outline">Me contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section id="intro" style="padding-top: 0px;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mon Profil</h2>
+            </div>
+            <div class="flex-row">
+                <div style="flex: 1 1 500px;">
+                    <p style="font-size: 1.1rem; color: var(--text-gray);">
+                        Autodidacte, je privilégie l'apprentissage par la pratique et la réalisation de projets concrets. Mon intérêt se porte principalement sur la <strong>programmation bas niveau (C/C++)</strong> et la <strong>cybersécurité</strong>.
+                    </p>
+                </div>
+                <div class="card" style="flex: 1 1 300px; border-left: 4px solid var(--primary);">
+                    <h3>Statut Actuel</h3>
+                    <p style="margin-top: 10px;">
+                        Développeur C++ Autodidacte (depuis 2022)<br>
+                        Étudiant à l'IUT de Marne-la-Vallée<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSION et OBJECTIFS -->
+    <section id="objectifs">
+        <div class="container">
+            <div class="flex-row">
+                <!-- mission -->
+                <div style="flex: 1 1 450px;">
+                    <div class="section-header">
+                        <h2>Énoncé de Mission</h2>
+                    </div>
+                    <p style="color: var(--text-gray);">
+                        Je suis naturellement curieux et j’aime comprendre comment les choses fonctionnent en profondeur.
+                        Plutôt que d’utiliser des outils sans me poser de questions, je cherche à savoir ce qu’il se passe
+                        en interne : la gestion de la mémoire, le fonctionnement du système ou les points faibles possibles.
+                        <br><br>
+                        Je travaille beaucoup en autonomie et j’aime aller sur des sujets techniques exigeants,
+                        comme l’analyse de code bas niveau ou le développement proche du système.
+                        Mon objectif est de <strong>bien comprendre pour pouvoir construire des solutions propres et fiables.</strong>
+                    </p>
+                </div>
+                <!-- objectifs -->
+                <div style="flex: 1 1 450px;">
+                    <div class="section-header">
+                        <h2>Objectifs</h2>
+                    </div>
+                    <div class="card" style="margin-bottom: 20px;">
+                        <h4 class="highlight">Court Terme (1-2 ans)</h4>
+                        <p>Progresser en développement logiciel complexe, acquérir de l'expérience pratique via l'alternance
+                            et consolider mes bases académiques tout en poursuivant mes projets système.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h4 class="highlight">Long Terme (5-10 ans)</h4>
+                        <p>Devenir un expert reconnu dans un domaine technique pointu (sécurité offensive, ingénierie système)
+                            et piloter des projets open-source ou indépendants innovants.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPETENCES -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Profil de Compétences</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Langages -->
+                <div class="card">
+                    <h3 class="highlight">Langages</h3>
+                    <div style="margin-top: 15px;">
+                        <h4>C++ (Principal)</h4>
+                        <p>Drivers kernel, Game Hacking, ImGui, Structures de données internes.</p>
+                        
+                        <h4>C# (bases)</h4>
+                        <p>Applications UI sécurisées, Intégration API, Chiffrement AES.</p>
+                        
+                        <h4>Python (bases)</h4>
+                        <p>Scripting, IA (Yolo v8), Automatisation.</p>
+                    </div>
+                </div>
+
+                <!-- Technique -->
+                <div class="card">
+                    <h3 class="highlight">Technique</h3>
+                    <ul class="skill-list" style="margin-top: 15px;">
+                        <li>Reverse Engineering</li>
+                        <li>Programmation Bas Niveau</li>
+                        <li>Analyse Mémoire (Stack/Heap)</li>
+                        <li>Désassembly & Débogage</li>
+                        <li>Sécurité Applicative</li>
+                        <li>Cryptographie (AES)</li>
+                    </ul>
+                </div>
+
+                <!-- Outils -->
+                <div class="card">
+                    <h3 class="highlight">Outils & Soft Skills</h3>
+                    <div style="margin-top: 15px;">
+                        <h4>ANALYSE :</h4>
+                        <p>IDA Pro, Cheat Engine, ReClass.NET, x64dbg.</p>
+                        
+                        <h4>DEV :</h4>
+                        <p>Visual Studio, Neovim, Git.</p>
+                    </div>
+                </div>
+
+                <!-- Apprentissage autonome -->
+                <div class="card">
+                    <h3 class="highlight">Apprentissage Autonome</h3>
+                    <div style="margin-top: 15px;">
+                        <p>
+                            J’apprends beaucoup par moi-même, principalement à travers des projets.
+                            J’aime tester, lire la documentation et comprendre les choses en profondeur,
+                            surtout quand il s’agit de sujets bas niveau.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Analyse & Debugging -->
+                <div class="card">
+                    <h3 class="highlight">Analyse & Debugging</h3>
+                    <div style="margin-top: 15px;">
+                        <p>
+                            En travaillant sur des projets liés à la mémoire, au reverse engineering
+                            et au game hacking, j’ai appris à analyser les bugs calmement
+                            et à comprendre d’où ils viennent, même lorsqu’il n’y a pas
+                            de message d’erreur clair, comme un bluescreen ou un crash silencieux.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Rigueur logicielle -->
+                <div class="card">
+                    <h3 class="highlight">Rigueur Logicielle</h3>
+                    <div style="margin-top: 15px;">
+                        <p>
+                            Le développement système demande beaucoup de rigueur.
+                            Je fais attention aux détails, notamment dans la gestion manuelle
+                            de la mémoire et la structure du code, afin d’éviter les erreurs
+                            et d’avoir un programme stable.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Esprit critique et analyse -->
+                <div class="card">
+                    <h3 class="highlight">Esprit Critique & Analyse</h3>
+                    <div style="margin-top: 15px;">
+                        <p>
+                            Le reverse engineering m’a permis de comprendre comment un programme fonctionne
+                            au plus bas niveau. En analysant le code et son exécution, j’ai appris à suivre
+                            ce qu’il se passe dans la mémoire et les registres, et à mieux comprendre
+                            le comportement réel d’un logiciel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projets</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Projet Assault Cube Multihack -->
+                <div class="card">
+                    <h3>Assault Cube Multihack</h3>
+                    <p style="margin-top: 10px;">
+                        Un hack interne pour le jeu (hors ligne) <strong>Assault Cube</strong> incluant de nombreuses fonctionnalités :
+                        ESP (affichage des joueurs à travers les murs), Aimbot,
+                        Triggerbot, ... Ce projet utilise des techniques de reverse engineering et d’injection de DLL pour manipuler la
+                        mémoire du jeu.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Reverse Engineering</span>
+                        <span class="tag">Game Hacking</span>
+                        <a href="https://github.com/speedaru/ac-esp1" class="tag fa-brands fa-github" target="_blank"></a>
+                    </div>
+                </div>
+
+                <!-- Projet editeur de texte -->
+                <div class="card">
+                    <h3>Éditeur de texte Console</h3>
+                    <p style="margin-top: 10px;">
+                        Éditeur de texte performant développé en C++ sans bibliothèques standard pour optimiser le traitement de fichiers
+                        volumineux. Ce projet m’a permis d’améliorer ma maîtrise de la gestion mémoire, des algorithmes complexes et du
+                        développement Windows via l’API Win32.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">System API</span>
+                        <a href="https://github.com/speedaru/fp_text_editor" class="tag fa-brands fa-github" target="_blank"></a>
+                    </div>
+                </div>
+
+                <!-- Projet MinZip Wrapper C++ pour compression ZIP -->
+                <div class="card">
+                    <h3>Wrapper C++ pour ZIP</h3>
+                    <p style="margin-top: 10px;">
+                        Une petite bibliothèque C++ (600 lignes) qui simplifie l’utilisation de minizip.
+                        Elle fournit des fonctions de haut niveau pour compresser et décompresser des fichiers,
+                        permettant d’effectuer ces opérations avec un seul appel de fonction. L’objectif
+                        principal est de rendre l’intégration ZIP en C++ plus accessible et intuitive.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Librairie</span>
+                        <span class="tag">Minizip</span>
+                        <a href="https://github.com/speedaru/minzip" class="tag fa-brands fa-github" target="_blank"></a>
+                    </div>
+                </div>
+
+                <!-- projet gestionnaire de mot de passes -->
+                <div class="card">
+                    <h3>Gestionnaire de mots de passe</h3>
+                    <p style="margin-top: 10px;">
+                        Application C# (~5000 lignes) avec interface UI moderne. Utilise le chiffrement AES pour sécuriser les données.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">Cryptography</span>
+                        <span class="tag">.NET</span>
+                    </div>
+                </div>
+
+                <!-- projet kernel driver -->
+                <div class="card">
+                    <h3>Kernel Driver R/W</h3>
+                    <p style="margin-top: 10px;">
+                        Réalisation d'un driver (pour Windows) permettant la lecture et l'écriture directe en mémoire physique. Étude de la
+                        structure interne de l'OS. La communication entre le driver et une application se fait via une fonction du kernel qui a été hookée.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Kernel</span>
+                        <span class="tag">Securité</span>
+                        <span class="tag">Gestion Mémoire</span>
+                    </div>
+                </div>
+
+                <!-- projet ai aimbot -->
+                <div class="card">
+                    <h3>AI Aiming POC (Yolo v8)</h3>
+                    <p style="margin-top: 10px;">
+                        Détection d'objets optimisée utilisant un modèle Intelligence Artificielle (YOLOv8) pour
+                        l'aide à la visée dans un jeu vidéo en temps réel.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Yolo v8</span>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 40px; text-align: center;">
+                <p>Retrouvez l'intégralité de mes travaux (publics) sur:</p>
+                <a href="https://github.com/speedaru" target="_blank" class="highlight" style="font-weight: 800; text-decoration: none; border-bottom: 2px solid var(--primary);">GITHUB.COM/SPEEDARU</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMATION -->
+    <section id="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>PARCOURS</h2>
+            </div>
+            <div class="flex-row">
+                <div class="card" style="flex: 1 1 400px;">
+                    <h3 class="highlight">Auto-formation</h3>
+
+                    <h4 style="margin: 20px 0 10px 0;">
+                        résumé de mon parcours d'apprentissage en autodidacte:
+                    </h4>
+
+                    <ul class="skill-list">
+                        <li>2022: introduction à la programmation avec <strong>Python</strong> (listes, boucles, ...)</li>
+                        <li>2023: premiers gros projets avec <strong>C# et .NET</strong> mais très peu de connaissances bas niveau</li>
+                        <li>
+                            2024: introductions aux concepts bas niveau avec C++.
+                            <br>
+                            Projets <strong>game hacking & introduction au reverse engineering</strong>
+                        </li>
+                        <li>
+                            2025: continuation de l'apprentissage avec des projets plus complexes:
+                            <ul class="skill-list">
+                                <li>kernel drivers (pour Windows)</li>
+                                <li>application EFI (pré OS)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card" style="flex: 1 1 400px;">
+                    <h3 class="highlight">Parcours Académique</h3>
+
+                    <p style="margin-top: 10px;">
+                        <strong>Bac général mention assez bien (spé Math Physique & Anglais)</strong><br>
+                        <em>2022 - 2025</em>
+                    </p>
+
+                    <p style="margin-top: 10px;">
+                        <strong>BUT Informatique (Bachelor Universitaire de Technologie)</strong><br>
+                        IUT de Marne-la-Vallée (Université Gustave Eiffel)<br>
+                        <em>sep. 2025 - Présent</em>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer id="contact">
+        <div class="container contacts">
+            <h2 style="margin-bottom: 20px;">Intéressé par mon profil <span class="highlight">?</span></h2>
+            <p style="color: var(--text-gray); max-width: 600px; margin: 0 auto 15px;">
+                Je suis ouvert aux opportunités de <strong>stages et d'alternances pour septembre 2026</strong>, ainsi que des demandes pour rentrer
+                en contact.
+            </p>
+
+            <div class="social-links">
+                <a href="https://github.com/speedaru" target="_blank">GITHUB</a>
+                <a href="https://www.linkedin.com/in/iegor-taftai-57a48b390/" target="_blank">LINKEDIN</a>
+                <div class=" email-container" onmouseenter="showEmail()" onmouseleave="hideEmail()">
+                    <a href="mailto:iegor.taftai@proton.me">EMAIL</a>
+                    <p id="emailText">iegor.taftai@proton.me</p>
+                </div>
+            </div>
+
+            <div class="footer-note">
+                2026 - IEGOR TAFTAI - TOUS DROITS RÉSERVÉS
+                <br>
+                <small>Conçu en pur HTML/CSS.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script>
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('navLinks');
+        const navContainer = document.getElementById('nav-container');
+        const emailText = document.getElementById('emailText')
+
+        // fermer le menu après un clic sur un lien
+        function closeMenu() {
+            menuToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
+
+        // afficher/fermer le menu burger
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // afficher/cacher le mail au survol
+        function showEmail() {
+            emailText.classList.add('active')
+        }
+
+        function hideEmail() {
+            emailText.classList.remove('active')
+        }
+
+        // fermer le menu si on clique en dehors du menu
+        window.addEventListener('click', (e) => {
+            if (!navContainer.contains(e.target) && navLinks.classList.contains('active')) {
+                closeMenu();
+            }
+        });
+    </script>
+</body>
+</html>
